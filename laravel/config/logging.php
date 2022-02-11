@@ -99,6 +99,10 @@ return [
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
         ],
+
+        'request' => [
+          'enable' => env('LOG_REQUEST_ENABLE', false),
+        ],
     ],
 
 ];
